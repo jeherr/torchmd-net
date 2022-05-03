@@ -120,7 +120,7 @@ def main():
     prior = None
     if args.prior_model:
         assert hasattr(priors, args.prior_model), (
-            f"Unknown prior model {args['prior_model']}. "
+            f"Unknown prior model {args.prior_model}. "
             f"Available models are {', '.join(priors.__all__)}"
         )
         # initialize the prior model
